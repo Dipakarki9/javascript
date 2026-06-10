@@ -2,65 +2,89 @@
 
 // conditional statement 
 
-//  1. if statement
-/*let age=18;
+/* 1. if statement
+   let age=18;
 if(age>=18){
     document.write("elligible to vote");
  } 
-    */
-// 2. if else 
+    
+ 2. if else 
 
-    let age=18;
-    if(age>18){
+     let age=18;
+     if(age>18){
         document.write("eligible to vote");
-    }
-    else{
-        document.write("not elligible");
-    }
+ }
+     else{
+       document.write("not elligible");
+     }
 
-   /* 3.else if
+   3.else if
    4.nested if
-   */
+   
 
-    // switch statmenent
+     switch statmenent
 
 
- let day=2;
- switch(day)
- {
-    case 1:
+  let day=2;
+  switch(day)
+  {
+   case 1:
       document.write("sunday");
          break;
 
 
 
          case 2:
-            document.write("monday");
-             break;
-         default:
+             document.write("monday");
+            break;
+        default:
                document.write("invalid");
- }
-
-//  loop statement 
-// 1.for loop
- for(let i=1; i<=5; i++)
- {
- document.write(i +"<br>");
- }
-//   2.while loop
-//   example
-  let i=1;
-  while(i<=5)
-  {
-  document.write(i + "<br>");
-  i++;
   }
 
-//   3. do while loop
-let i=1;
-do{
+ loop statement 
+1.for loop
+  for(let i=1; i<=5; i++)
+ {
+ document.write(i +"<br>");
+  }
+  2.while loop
+  example
+  let i=1;
+   while(i<=5)
+   {
+   document.write(i + "<br>");
+   i++;
+  }
+
+  3. do while loop
+ let i=1;
+ do{
     document.write(i+"<br>");
-    i++;
+     i++;
 
 }
 while(i<=5);
+*/
+
+ practice
+
+for (let num=0; num<=100; num++)
+{
+    if(num%2==0)
+    {
+        console.log("num=",num);
+    }
+}
+
+//  practice 2
+
+
+let guessFruits = ["Apple", "mango", "banana"];
+
+let userGuess = prompt("Guess a fruit name :");
+
+while (!guessFruits.includes(userGuess)) {
+    userGuess = prompt("Fruit name does not match! Try again :");
+}
+
+alert("Congratulations! You guessed correctly: " + userGuess);
