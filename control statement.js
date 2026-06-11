@@ -66,25 +66,38 @@ if(age>=18){
 while(i<=5);
 */
 
- practice
+//  practice
 
-for (let num=0; num<=100; num++)
-{
-    if(num%2==0)
-    {
-        console.log("num=",num);
-    }
-}
+// for (let num=0; num<=100; num++)
+// {
+//     if(num%2==0)
+//     {
+//         console.log("num=",num);
+//     }
+// }
 
 //  practice 2
 
 
-let guessFruits = ["Apple", "mango", "banana"];
+// let guessFruits = ["Apple", "mango", "banana"];
 
-let userGuess = prompt("Guess a fruit name :");
+// let userGuess = prompt("Guess a fruit name :");
 
-while (!guessFruits.includes(userGuess)) {
-    userGuess = prompt("Fruit name does not match! Try again :");
-}
+// while (!guessFruits.includes(userGuess)) {
+//     userGuess = prompt("Fruit name does not match! Try again :");
+// }
 
-alert("Congratulations! You guessed correctly: " + userGuess);
+// alert("Congratulations! You guessed correctly: " + userGuess);
+
+
+// string
+// replace method()
+let str="hello";
+console.log(str.replace("h" , "p"));
+
+// practice question of string
+
+let fullname = prompt("enter a fullname without spaces");
+
+let username =  fullname + "@" + fullname.length;
+console.log(username);
