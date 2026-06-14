@@ -59,9 +59,34 @@ let NameBoy = ["manish","gaurav"];
 NameBoy.unshift("Pralad","sandip");
 console.log(NameBoy);
 
-// shift () method ->delete at the begininng
+// shift () method ->delete at the begininng and return value.
 let girlName = ["beepu","gareema"];
 // girlName.shift();
 // console.log(girlName);
 let val = girlName.shift();
 console.log("delted",val);
+
+// Slice () method
+
+let color = ["black","blue","red","brown"];
+console.log( color.slice(1,3));
+
+// Splice()method->to change original array(add,remove,replace).
+let arr = [5,6,7,8,9];
+// arr.splice(2,2,277,234);
+
+// add element
+// arr.splice(1,0,6);
+
+// delete element
+// arr.splice(3,1);
+
+// replace element
+arr.splice(3,1,107);
+
+// practice questions
+
+let companies = ["Bloomberg","Microsoft","uber","Google","IBM","Netflix"];
+companies.shift();
+companies.splice(1,1,"Ola");
+companies.push("Amazon");
