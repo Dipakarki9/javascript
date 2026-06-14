@@ -68,26 +68,26 @@ while(i<=5);
 
 //  practice
 
-// for (let num=0; num<=100; num++)
-// {
-//     if(num%2==0)
-//     {
-//         console.log("num=",num);
-//     }
-// }
+for (let num=0; num<=100; num++)
+{
+    if(num%2==0)
+    {
+        console.log("num=",num);
+    }
+}
 
 //  practice 2
 
 
-// let guessFruits = ["Apple", "mango", "banana"];
+let guessFruits = ["Apple", "mango", "banana"];
 
-// let userGuess = prompt("Guess a fruit name :");
+ let userGuess = prompt("Guess a fruit name :");
 
-// while (!guessFruits.includes(userGuess)) {
-//     userGuess = prompt("Fruit name does not match! Try again :");
-// }
+ while (!guessFruits.includes(userGuess)) {
+     userGuess = prompt("Fruit name does not match! Try again :");
+ }
 
-// alert("Congratulations! You guessed correctly: " + userGuess);
+alert("Congratulations! You guessed correctly: " + userGuess);
 
 
 // string
