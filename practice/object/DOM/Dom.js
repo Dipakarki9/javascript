@@ -6,7 +6,7 @@ console.log(select);
 // let name = document.getElementsByClassName("head");
 // console.log(name);
 
-let subtitle = document.getElementsByClassName("head");
+let subpara = document.getElementsByClassName("head");
 // console.log(subtitle);
 // let htmlcollectionLength = subtitle.length;
 // console.log(htmlcollectionLength);
@@ -51,8 +51,33 @@ selected.forEach((mess) => {
 
 
 // DOM PROPERTIES
+
+// 1.innerHTML
 let propert = document.getElementById("para");
 console.log(propert.innerHTML);
 propert.innerHTML = "<b>Are you enjoying</b>";
+
+
+// 2.textContent
+let text = document.getElementById("para");
+console.log(text.textContent);
+
+// 3.style
+let button = document.getElementById("btn");
+console.log(button);
+ btn.style.color = "red";
+btn.style.fontSize = "18x";
+btn.style.backgroundColor = "yellow";
+
+// 4.classList
+
+// let listed = document.getElementById("para");
+
+// console.log(listed);
+// para.classList.add("red");      
+// para.classList.remove("red");
+// para.classList.toggle("dark");
+// para.classList.contains("red");
+
 
 
