@@ -81,3 +81,45 @@ btn.style.backgroundColor = "yellow";
 
 
 
+// 5.getAttribute()
+let img = document.getElementById("photo");
+// console.log(img.getAttribute("src"));
+img.setAttribute("alt","jsphotos");
+
+// // console.log(img.getAttribute("alt"));
+
+// 6.parentElement
+let p = document.getElementById("text");
+console.log(p.parentElement);
+
+// childelement
+// let fruitsName = document.getElementById("list");
+// console.log(fruitsName.children);
+// createElement
+let pTag = document.createElement("p");
+pTag.innerText='hello i am bca student';
+console.log(pTag);
+
+// appendChild
+
+let appendExample = document.createElement("p");
+p.textContent='hii may i help you';
+document.body.appendChild(p);
+
+
+// prepend
+
+let content = document.getElementById("text");
+text.prepend("okk");
+console.log(content);
+// or
+ let fruitss = document.createElement("li");
+ fruitss.textContent="papaya";
+
+ list.prepend(fruitss);
+ console.log(fruitss);
+
+//  removechild
+let remove = document.getElementById("list");
+remove.removeChild(list.children[1a]);
+console.log(remove);
