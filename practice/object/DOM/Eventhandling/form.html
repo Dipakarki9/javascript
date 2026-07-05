@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
     <script src="form.js" defer></script>
 </head>
 <body>
-    <fieldset>
+    <fieldset class="regist">
         <legend>Registration Form</legend>
-    <form action="" id="studentForm">
-   Name:<input type="text" id="studentname"><br><br>
+    <form action="" id="studentForm" class="form">
+   <label>FullName</label>
+   <input type="text" id="studentname" placeholder="e.g: Dipa karki"><br><br>
   <input type="hidden" id="userId" value="101">
-  Email:<input type="email" id="studentemail"><br><br>
-  Contact no :<input type="number" id="studentNumber"><br><br>
+  <label>Address</label>
+  <input type="text" id="address"><br><br>
+  <label>DOB</label><input type="date" id="dateofbirth"><br><br>
+  <label>Email</label><input type="email" id="studentemail"><br><br>
   
-  <input type="radio" name="gender" value="male">Male
-<input type="radio" name="gender" value="female">female<br><br>
-  Faculty:
+  <label>Contact no</label><input type="number" id="studentNumber"><br><br>
+
+
+<div class="form-group">
+  <label>Gender:</label>
+  <div class="gender-options">
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+  </div>
+</div>
+
+  
+  <label>Faculty</label>
   <select id="selectCourse">
     <option></option>
   <option>BCA</option>
@@ -30,7 +44,8 @@
 <br><br>
   <textarea id="message"></textarea><br><br>
   <input type="checkbox" id="agree">I agree with all the terms and conditions.<br><br>
-  <button type="submit" id="submitform">Submit</button> 
+     <p id="error"></p>
+  <button type="submit" id="submitform">Register</button> 
     </form>
     </fieldset>
 </body>

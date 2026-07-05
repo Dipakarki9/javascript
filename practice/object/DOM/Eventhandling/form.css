@@ -1,0 +1,97 @@
+
+
+*{
+    font-family: poppins;
+}
+
+.form{
+    text-align: center;
+    font-size: 18px;
+    
+}
+.regist{
+    width: 420px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    
+}
+legend{
+    font-size: 22px;
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 0 10px;
+    
+}
+legend::first-letter{
+    font-size: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+textarea{
+    height: 80px;
+    resize: none;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 10px;
+    gap:15px;
+}
+button{
+    width: 30%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label:first-child {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  
+}
+
+.gender-options {
+  display: inline-block;
+}
+
+.gender-options label {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+#error {
+    color: red;
+    
+}
+#success {
+    color: green;
+    /* font-weight: bold; */
+}
