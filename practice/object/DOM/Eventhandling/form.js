@@ -41,7 +41,8 @@ let textarea = document.getElementById("message").value.trim();
 let checkbox = document.getElementById("agree").checked;
 // console.log(checkbox.checked);
 
-
+console.log("name:",name);
+console.log("dob:",dob);
  if (name === "") {
     errorElement.textContent = "full Name is required.";
   } 
@@ -90,7 +91,8 @@ else {
     
     setTimeout(() => {
       registationform.submit(); 
-    }, 3000);
+    }, 30000);
+    // console.log(registationform);
   }
 })
 

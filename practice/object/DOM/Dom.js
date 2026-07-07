@@ -121,5 +121,5 @@ console.log(content);
 
 //  removechild
 let remove = document.getElementById("list");
-remove.removeChild(list.children[1a]);
+remove.removeChild(list.children[1]);
 console.log(remove);
