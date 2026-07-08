@@ -46,3 +46,14 @@ pArray.forEach((word) => {
   }
 });
 paragraph.innerHTML = newParagraph;
+
+/*2017.Q
+write a javascript code to print smallest and largest numbers among 10 elements of a array.
+*/
+let numbers = [20,30,40,50,10,60,70,80,90,100];
+
+let largest = Math.max(...numbers);
+let smallest = Math.min(...numbers);
+
+console.log("Largest number:", largest);
+console.log("Smallest number:", smallest);
